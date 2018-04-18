@@ -12,14 +12,24 @@
         </style>
     </head>
     <body>
-        <div id="ilg"></div>
+            <div id="ilg"></div>
+            <div id="plot"></div>
+            <div id="peri"></div>
+            <div id="plotass"></div>
+            <div id="istryz"></div>
 
         <script>
-            var ilgis = 4;
+            var ilgis = 7;
             var plotis = 3;
             var perimetras = 2 * (ilgis + plotis);
             var plotas = ilgis * plotis;
+            var istrizaine = Math.sqrt((ilgis * ilgis) + (plotis * plotis));
             document.getElementById("ilg").innerHTML = "Stačiakampio ilgis: " + ilgis;
+            document.getElementById("plot").innerHTML = "Stačiakampio plotis: " + plotis;
+            document.getElementById("peri").innerHTML = "Stačiakampio perimetras: " + 2 + " * ( " + ilgis + " + " + plotis + " ) = " + perimetras;
+            document.getElementById("plotass").innerHTML = "Stačiakampio plotas: " + ilgis + " * " + plotis + " = " + plotas;
+            document.getElementById("istryz").innerHTML = "Stačiakampio istrižainė: " + Math.round(istrizaine);
+
         </script>
     </body>
 </html>
